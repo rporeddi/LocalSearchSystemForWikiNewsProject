@@ -1,0 +1,11 @@
+body{
+    text-align: justify;
+}
+.person_image {
+    border-radius:50%;
+}
+.bi{
+    text-align:center;
+    background-color: #fc6220;
+    color: white;
+}

@@ -1,0 +1,29 @@
+
+.heading{
+    font-size: 35px;
+    color: black;
+    padding: 20px;
+}
+.scrapform {
+    padding:50px 100px;
+    margin-top: 90px;
+    width: 800px;
+    margin-left: 200px;
+}
+.weblink {
+    font-size: 20px;
+    color: black;
+    padding-top: 1px;
+    padding-left: 20px;
+}
+input[type=text] {
+    margin: 0px 30px;
+    width: 400px;
+}
+.scrap{
+    background: #273B7A;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 20px;
+    border: none;
+}

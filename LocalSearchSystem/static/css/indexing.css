@@ -1,0 +1,16 @@
+.index_content {
+    margin-left: 200px;
+    margin-top: 90px;
+    padding: 50px 100px 100px 100px;
+}
+.indexform {
+    margin-top: 30px;
+}
+.indexbutton {
+    background: #273B7A;
+    color: white;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
