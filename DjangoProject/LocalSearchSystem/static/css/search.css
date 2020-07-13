@@ -1,0 +1,62 @@
+body {
+    color: #404E67;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    padding: 15px 15px 0px 15px;
+    background: white;
+}
+.heading{
+    margin-top: 80px;
+}
+.title{
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.title:hover {
+    color: black;
+    text-decoration: none;
+}
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 120px;    
+}
+.overlay-text{
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  margin-top: 50px;
+  border-radius: 30px;
+  background: white;
+}
+.overlay-button {
+  width: 20%;
+  padding: 10px 20px;
+  background: #273B7A;
+  font-size: 17px;
+  margin-top: 50px;
+  border: none;
+  color: white; 
+  border-radius: 30px;
+  cursor: pointer;
+}
+.overlay button:hover {
+  background: #bbb;
+}
+.signout{
+    float:right;
+    padding: 15px 50px 0px 0px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.signout:hover{
+    text-decoration: none;
+}

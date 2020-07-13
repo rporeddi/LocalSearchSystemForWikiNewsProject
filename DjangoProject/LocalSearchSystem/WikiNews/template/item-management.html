@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="Stylesheet" href=" " "text="" javascript""="" src=""https://code.jquery.com/jquery-1.12.3.js">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/common.css">
+</head>
+	
+<body>
+	
+    <header>
+        <a class="title" href="#"><img src="./images/logo.png" alt="logo" style="width:60px;"> Local Search System</a>    
+    </header>
+    
+    <div class="sidebar">
+      <a href="user-management.html"><i class="fa fa-users navtext" title="User management"></i> User Management</a> 
+      <a href="Item-Management.html"  class="active"><i class="fa fa-list navtext" title="Item management"></i> Item Management</a>
+      <a href="web-scrapping.html"><i class="fa fa-globe navtext" title="Web scrapping" ></i> Web Scraping</a>
+      <a href="index.html"><i class="fa fa-sign-out navtext" title="Sign out"></i> Sign Out</a> 
+    </div>
+    
+    <div class="container-lg tabledata">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Item <b>Details</b></h2></div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-info add-new">Index</button>
+                        </div>
+                    </div>
+                </div>
+                <table id="item_table" class="table table-responsive table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item Id</th>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                            <th>Item website</th>
+                            <th>Indexing</th>
+							<th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="details.html">DJ AM</a></td>
+                            <td>Biography of DJ AM</td>
+                            <td>www.djamdoc.com</td>
+							<td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="details.html">Aaliyah</a></td>
+                            <td>Biography of Aaliyah</td>
+                            <td>www.aaliyah.com</td>
+							<td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="details.html">Jomo Kenyatta</a></td>
+                            <td>Biography of Jomo Kenyatta</td>
+                            <td> </td>
+							<td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr> 
+                        <tr>
+                           <td>4</td>
+                            <td><a href="details.html">Hasan al-Kharrat</a></td>
+                            <td>Biography of Hasan al-Kharrat</td>
+                            <td> </td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>   
+                         <tr>
+                           <td>5</td>
+                            <td><a href="details.html">Abu Nidal</a></td>
+                            <td>Biography of Abu Nidal</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                          <tr>
+                           <td>6</td>
+                            <td><a href="details.html">Chinua Acebe</a></td>
+                            <td>Biography of Chinua Acebe</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>7</td>
+                            <td><a href="details.html">John Adair</a></td>
+                            <td>Biography of JOhn Adair</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>8</td>
+                            <td><a href="details.html">Doc Adams</a></td>
+                            <td>Biography of Doc Adams</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>9</td>
+                            <td><a href="details.html">John Adams</a></td>
+                            <td>Biography of John Adams</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>10</td>
+                            <td><a href="details.html">Samuel Adams</a></td>
+                            <td>Biography of Samuel Adams</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>11</td>
+                            <td><a href="details.html">Nick Adanhart</a></td>
+                            <td>Biography of Nick Adanhart</td>
+                            <td></td>
+						    <td>Indexing</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>     
+
+    <script src="Js/item-management.js"></script>
+</body>
+</html>

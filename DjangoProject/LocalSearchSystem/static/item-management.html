@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="Stylesheet" href=" " "text="" javascript""="" src=""https://code.jquery.com/jquery-1.12.3.js">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="CSS/common.css">
+</head>
+	
+<body>
+	
+    <header>
+        <a class="title" href="#"><img src="./images/logo.png" alt="logo" style="width:60px;"> Local Search System</a>    
+    </header>
+    
+    <div class="sidebar">
+      <a href="user-management.html"><i class="fa fa-users navtext" title="User management"></i> User Management</a> 
+      <a href="Item-Management.html"  class="active"><i class="fa fa-list navtext" title="Item management"></i> Item Management</a>
+      <a href="web-scrapping.html"><i class="fa fa-globe navtext" title="Web scrapping" ></i> Web Scraping</a>
+      <a href="index.html"><i class="fa fa-sign-out navtext" title="Sign out"></i> Sign Out</a> 
+    </div>
+    
+    <div class="container-lg tabledata">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Item <b>Details</b></h2></div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-info add-new">Index</button>
+                        </div>
+                    </div>
+                </div>
+                <table id="item_table" class="table table-responsive table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item No.</th>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                            <th>Last Updated</th>
+							<th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="details.html">Seoul city Mayor Park Won-soon found dead, South Korean police confirm</a></td>
+                            <td>Park Won-soon, the mayor of Seoul, South Korea, was found dead, police reported Friday morning, local time. He was reported missing Thursday evening by the police.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="details.html">Serbian protesters try to storm Parliament; fourth day of protests</a></td>
+                            <td>Friday night was the fourth night in a row that Serbians protested; the protest started out against the government's anti-COVID-19 measures but has reportedly expanded into more general anti-government protests. Police director Vladimir Rebic said at least 71 people were arrested Friday night.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="details.html">Astronomer Anthony Boccaletti discusses observation of birth of potential exoplanet with Wikinews</a></td>
+                            <td>In March, a study conducted by astronomer Anthony Boccaletti and other researchers reported potential signs of formation of an exoplanet around the star AB Aurigae.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr> 
+                        <tr>
+                           <td>4</td>
+                            <td><a href="details.html">Neanderthals 'knew what they were doing': Archæologist Dr Naomi Martisius discusses her findings about Neanderthals' behaviour with Wikinews</a></td>
+                            <td>In May, a study conducted by archæologist Dr. Naomi Martisius and other researchers concluded Neanderthals living in Europe tens of thousands of years ago were more sophisticated than previously thought.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>   
+                         <tr>
+                           <td>5</td>
+                            <td><a href="details.html">Open source game developer Perttu Ahola talks about Minetest with Wikinews</a></td>
+                            <td>Recently, Finnish open-source video game developer Perttu Ahola discussed Minetest, his "longest ever project", with Wikinews. Started in October 2010, Minetest was an attempt by Ahola to create a sandbox game similar to Minecraft.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                          <tr>
+                           <td>6</td>
+                            <td><a href="details.html">Neanderthals 'knew what they were doing': Archæologist Dr Naomi Martisius discusses her findings about Neanderthals' behaviour with Wikinews</a></td>
+                            <td>Last month, a study conducted by archæologist Dr. Naomi Martisius and other researchers concluded Neanderthals living in Europe tens of thousands of years ago were more sophisticated than previously thought.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>7</td>
+                            <td><a href="details.html">Three killed, three others injured in stabbing attack in Reading, UK</a></td>
+                            <td>On Saturday evening in Forbury Gardens in Reading, Berkshire, UK shortly before 19:00 local time (1800 UTC), a mass stabbing killed three people and injured three others.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>8</td>
+                            <td><a href="details.html">British supermarket chain Tesco to sell its Polish branch to Salling Group A/S</a></td>
+                            <td>On Thursday, UK-based retailer Tesco and Denmark-based retailer Salling Group announced their agreement over selling a large portion of Tesco's Polish operation to Salling Group.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>9</td>
+                            <td><a href="details.html">On the campaign trail in the USA, May 2020</a></td>
+                            <td>The following is the first edition of a monthly series chronicling the 2020 United States presidential election. It features original material compiled throughout the previous month after an overview of the month's biggest stories.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>10</td>
+                            <td><a href="details.html">South Sudanese politician John Luk Jok dies aged about 68</a></td>
+                            <td>John Luk Jok, the South Sudanese minister for East African Affairs and a figure in independence from Sudan, died yesterday in Juba, the capital city of South Sudan.</td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                         <tr>
+                           <td>11</td>
+                            <td><a href="details.html">Face coverings to be mandatory on public transport in England from June 15, transport secretary declares</a></td>
+                            <td>Yesterday, England's transport secretary, Grant Shapps, announced that from June 15, wearing a face covering would become compulsory while riding public transport in England. </td>
+                            <td>Sunday 12 Jul 2020</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>     
+
+    <script src="Js/item-management.js"></script>
+</body>
+</html>
