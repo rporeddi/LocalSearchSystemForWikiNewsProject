@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="Stylesheet" href=" " "text="" javascript""="" src=""https://code.jquery.com/jquery-1.12.3.js">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>  
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="/static/css/common.css">
+</head>
+	
+<body>
+	
+    <header>
+        <a class="title" href="#"><img src="/static/images/logo.png" alt="logo" style="width:60px;"> Local Search System</a>
+    </header>
+    
+    <div class="sidebar">
+      <a href="{% url 'User:usermanagement' %}" class="active"><i class="fa fa-users navtext" title="User management"></i> User Management</a>
+      <a href="{% url 'WikiNews:itemmanagement' %}"><i class="fa fa-list navtext" title="Item management"></i> Item Management</a>
+      <a href="{% url 'WikiNews:webscrapping' %}"><i class="fa fa-globe navtext" title="Web scrapping" ></i> Web Scraping</a>
+      <a href="{% url 'User:logout' %}"><i class="fa fa-sign-out navtext" title="Sign out"></i> Sign Out</a>
+    </div>
+    
+    <div class="container-lg tabledata">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>User <b>Details</b></h2></div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                        </div>
+                    </div>
+                </div>
+                <table id="user_table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>User Id</th>
+                            <th>UserName</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for x in data %}
+                        <tr>
+                            <td>{{x.userid}}</td>
+                            <td>{{x.username}}</td>
+                            <td>{{x.password}}</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>     
+
+    <script src="/static/js/user-management.js"></script>
+</body>
+</html>

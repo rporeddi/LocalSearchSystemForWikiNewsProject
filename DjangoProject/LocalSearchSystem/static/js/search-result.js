@@ -28,10 +28,10 @@ function displayResults(results) {
   searchResults.insertAdjacentHTML('beforeend',
       `<div class="resultItem">
         <h3 class="resultItem-title">
-         <a href="search-item-result.html" target="_blank" rel="noopener">${result.title}</a>
+         <a href="{% url 'WikiNews:searchitemresult' %}" target="_blank" rel="noopener">${result.title}</a>
         </h3>
         <span class="resultItem-snippet">${result.snippet}</span><br>
-        <a href="search-item-result.html" class="resultItem-link" target="_blank" rel="noopener">${url}</a>
+        <a href="{% url 'WikiNews:searchitemresult' %}" class="resultItem-link" target="_blank" rel="noopener">${url}</a>
       </div>`
     );
   });

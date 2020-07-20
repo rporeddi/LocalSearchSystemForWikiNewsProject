@@ -33,3 +33,12 @@ class ItemDetails(models.Model):
 
     class Meta:
         db_table = 'ItemDetails'
+
+
+class Items(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200, null=True)
+    content = models.CharField(max_length=1000, null=True)
+
+    class Meta:
+        db_table = 'Items'
