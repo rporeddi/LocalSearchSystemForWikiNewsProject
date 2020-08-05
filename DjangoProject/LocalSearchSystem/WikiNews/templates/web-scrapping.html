@@ -27,9 +27,10 @@
     
     <div class="col-md-9 scrapform">
         <h2 class="heading">Web <b>scrapping</b></h2>
-        <form onsubmit="return validateWebScrappingForm();">
+        <form onsubmit="return validateWebScrappingForm();" action="{% url 'WikiNews:scrapping' %}" method="POST">
+            {% csrf_token %}
             <p class="weblink">Enter Website URL: </p>
-            <input class="input" type="text" id="webscrap">
+            <input class="input" type="text" id="urlinput", name="urlinput">
             <input class="scrap" type="submit" value="scrap">
 <!--            <button  type="submit" class="scrap" onclick="validateWebScrappingForm();">Scrap</button>-->
         </form>

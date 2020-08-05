@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="/static/CSS/common.css">
+    <link rel="stylesheet" href="/static/css/search.css">
+  </head>
+
+  <body onload="loadForm();">
+
+    <header>
+        <a class="title" href="#"><img src="/static/images/logo.png" alt="logo" style="width:60px;"> Local Search System</a>
+        <a class="signout" href="{% url 'User:logout' %}"><i class="fa fa-sign-out navtext" title="Sign out"></i>Sign Out</a>
+    </header>
+
+    <div class="container">
+        <form  method="get" action="." id="search_form" class="overlay-content">
+            {{ form.non_field_errors }}
+            <div class="overlay-text">
+                {{ form.as_p }}
+            </div>
+
+            <input class="overlay-button" value="Search" type="submit">
+
+            {% if query %}
+            <div class="container">
+                <div class="row">
+                    {% for result in page.object_list %}
+                        <div class="thumbnail">
+                            <div class="form-group">
+                                <p class="searchResult"> <a onclick='itemDetail({{result.id}});'>{{result.title}}</a></p>
+                                <p class="text-justify content">{{result.content|truncatewords:50}}</p>
+                            </div>
+                        </div>
+                    {% empty %}
+                    <img class="center" src="/static/images/noresults.png" alt="No results found.">
+<!--                    <p class="text-right">No results found.</p>-->
+                    {% endfor%}
+                </div>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+    <script src="/static/js/search.js"></script>
+  </body>
+</html>

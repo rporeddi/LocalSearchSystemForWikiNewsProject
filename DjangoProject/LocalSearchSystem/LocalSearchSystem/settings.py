@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'User',
-    'WikiNews'
+    'WikiNews',
+    'bootstrap3',
     
 ]
 
@@ -73,13 +75,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'LocalSearchSystem.wsgi.application'
 
 
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wikinews',
+        'NAME': 'LocalSearchSystem',
         'USER': 'root',
         'PASSWORD': 'Step@2020',
         'HOST': '127.0.0.1',
@@ -88,6 +98,7 @@ DATABASES = {
     }
 }
 
+# AUTH_USER_MODEL = 'User.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -107,6 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
